@@ -1,5 +1,6 @@
 export interface MCPServer {
   name: string
+  slug: string
   display_name: string
   category: string
   description: string
@@ -19,6 +20,10 @@ export interface MCPServer {
   path: string
   vendor?: string
   logo_url?: string
+  icon?: string
+  docker_image?: string
+  downloads?: number
+  lastUpdated?: string
 }
 
 export interface MCPVerification {
@@ -47,7 +52,9 @@ export interface MCPStats {
   github_stars?: number
   docker_pulls?: number
   npm_downloads?: number
+  downloads?: number
   last_updated?: string
+  lastUpdated?: string
 }
 
 export interface MCPInstallationMethod {

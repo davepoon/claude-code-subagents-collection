@@ -487,8 +487,7 @@ export default function MCPPageClient({
                 <PaginationContent>
                   <PaginationItem>
                     <PaginationPrevious 
-                      onClick={() => handlePageChange(Math.max(1, currentPage - 1))}
-                      disabled={currentPage === 1}
+                      onClick={currentPage === 1 ? undefined : () => handlePageChange(Math.max(1, currentPage - 1))}
                       className={currentPage === 1 ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'}
                     />
                   </PaginationItem>
@@ -511,8 +510,7 @@ export default function MCPPageClient({
                   
                   <PaginationItem>
                     <PaginationNext 
-                      onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))}
-                      disabled={currentPage === totalPages}
+                      onClick={currentPage === totalPages ? undefined : () => handlePageChange(Math.min(totalPages, currentPage + 1))}
                       className={currentPage === totalPages ? 'cursor-not-allowed opacity-50' : 'cursor-pointer'}
                     />
                   </PaginationItem>

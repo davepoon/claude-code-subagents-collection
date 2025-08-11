@@ -1,7 +1,7 @@
 {
   "$schema": "https://buildwithclaude.com/schema/registry.json",
   "version": "1.0.0",
-  "lastUpdated": "2025-08-07T00:12:38.831Z",
+  "lastUpdated": "2025-08-11T09:17:05.657Z",
   "subagents": [
     {
       "name": "academic-research-synthesizer",
@@ -10,7 +10,7 @@
       "version": "1.0.0",
       "file": "subagents/academic-research-synthesizer.md",
       "tools": [],
-      "tags": []
+      "path": "academic-research-synthesizer.md"
     },
     {
       "name": "academic-researcher",
@@ -19,7 +19,7 @@
       "version": "1.0.0",
       "file": "subagents/academic-researcher.md",
       "tools": [],
-      "tags": []
+      "path": "academic-researcher.md"
     },
     {
       "name": "accessibility-specialist",
@@ -28,7 +28,7 @@
       "version": "1.0.0",
       "file": "subagents/accessibility-specialist.md",
       "tools": [],
-      "tags": []
+      "path": "accessibility-specialist.md"
     },
     {
       "name": "agent-expert",
@@ -37,7 +37,7 @@
       "version": "1.0.0",
       "file": "subagents/agent-expert.md",
       "tools": [],
-      "tags": []
+      "path": "agent-expert.md"
     },
     {
       "name": "ai-engineer",
@@ -46,7 +46,7 @@
       "version": "1.0.0",
       "file": "subagents/ai-engineer.md",
       "tools": [],
-      "tags": []
+      "path": "ai-engineer.md"
     },
     {
       "name": "api-documenter",
@@ -55,7 +55,7 @@
       "version": "1.0.0",
       "file": "subagents/api-documenter.md",
       "tools": [],
-      "tags": []
+      "path": "api-documenter.md"
     },
     {
       "name": "api-security-audit",
@@ -64,7 +64,7 @@
       "version": "1.0.0",
       "file": "subagents/api-security-audit.md",
       "tools": [],
-      "tags": []
+      "path": "api-security-audit.md"
     },
     {
       "name": "arbitrage-bot",
@@ -73,7 +73,7 @@
       "version": "1.0.0",
       "file": "subagents/arbitrage-bot.md",
       "tools": [],
-      "tags": []
+      "path": "arbitrage-bot.md"
     },
     {
       "name": "architect-review",
@@ -82,7 +82,7 @@
       "version": "1.0.0",
       "file": "subagents/architect-review.md",
       "tools": [],
-      "tags": []
+      "path": "architect-review.md"
     },
     {
       "name": "audio-quality-controller",
@@ -91,7 +91,7 @@
       "version": "1.0.0",
       "file": "subagents/audio-quality-controller.md",
       "tools": [],
-      "tags": []
+      "path": "audio-quality-controller.md"
     },
     {
       "name": "backend-architect",
@@ -100,7 +100,7 @@
       "version": "1.0.0",
       "file": "subagents/backend-architect.md",
       "tools": [],
-      "tags": []
+      "path": "backend-architect.md"
     },
     {
       "name": "blockchain-developer",
@@ -109,7 +109,7 @@
       "version": "1.0.0",
       "file": "subagents/blockchain-developer.md",
       "tools": [],
-      "tags": []
+      "path": "blockchain-developer.md"
     },
     {
       "name": "business-analyst",
@@ -118,7 +118,7 @@
       "version": "1.0.0",
       "file": "subagents/business-analyst.md",
       "tools": [],
-      "tags": []
+      "path": "business-analyst.md"
     },
     {
       "name": "c-developer",
@@ -127,7 +127,7 @@
       "version": "1.0.0",
       "file": "subagents/c-developer.md",
       "tools": [],
-      "tags": []
+      "path": "c-developer.md"
     },
     {
       "name": "cloud-architect",
@@ -136,7 +136,7 @@
       "version": "1.0.0",
       "file": "subagents/cloud-architect.md",
       "tools": [],
-      "tags": []
+      "path": "cloud-architect.md"
     },
     {
       "name": "code-reviewer",
@@ -145,7 +145,7 @@
       "version": "1.0.0",
       "file": "subagents/code-reviewer.md",
       "tools": [],
-      "tags": []
+      "path": "code-reviewer.md"
     },
     {
       "name": "command-expert",
@@ -154,7 +154,7 @@
       "version": "1.0.0",
       "file": "subagents/command-expert.md",
       "tools": [],
-      "tags": []
+      "path": "command-expert.md"
     },
     {
       "name": "comprehensive-researcher",
@@ -163,7 +163,7 @@
       "version": "1.0.0",
       "file": "subagents/comprehensive-researcher.md",
       "tools": [],
-      "tags": []
+      "path": "comprehensive-researcher.md"
     },
     {
       "name": "connection-agent",
@@ -172,7 +172,7 @@
       "version": "1.0.0",
       "file": "subagents/connection-agent.md",
       "tools": [],
-      "tags": []
+      "path": "connection-agent.md"
     },
     {
       "name": "content-marketer",
@@ -181,7 +181,7 @@
       "version": "1.0.0",
       "file": "subagents/content-marketer.md",
       "tools": [],
-      "tags": []
+      "path": "content-marketer.md"
     },
     {
       "name": "context-manager",
@@ -190,7 +190,7 @@
       "version": "1.0.0",
       "file": "subagents/context-manager.md",
       "tools": [],
-      "tags": []
+      "path": "context-manager.md"
     },
     {
       "name": "cpp-engineer",
@@ -199,7 +199,7 @@
       "version": "1.0.0",
       "file": "subagents/cpp-engineer.md",
       "tools": [],
-      "tags": []
+      "path": "cpp-engineer.md"
     },
     {
       "name": "crypto-analyst",
@@ -208,7 +208,7 @@
       "version": "1.0.0",
       "file": "subagents/crypto-analyst.md",
       "tools": [],
-      "tags": []
+      "path": "crypto-analyst.md"
     },
     {
       "name": "crypto-risk-manager",
@@ -217,7 +217,7 @@
       "version": "1.0.0",
       "file": "subagents/crypto-risk-manager.md",
       "tools": [],
-      "tags": []
+      "path": "crypto-risk-manager.md"
     },
     {
       "name": "crypto-trader",
@@ -226,7 +226,7 @@
       "version": "1.0.0",
       "file": "subagents/crypto-trader.md",
       "tools": [],
-      "tags": []
+      "path": "crypto-trader.md"
     },
     {
       "name": "customer-support",
@@ -235,7 +235,7 @@
       "version": "1.0.0",
       "file": "subagents/customer-support.md",
       "tools": [],
-      "tags": []
+      "path": "customer-support.md"
     },
     {
       "name": "data-analyst",
@@ -244,7 +244,7 @@
       "version": "1.0.0",
       "file": "subagents/data-analyst.md",
       "tools": [],
-      "tags": []
+      "path": "data-analyst.md"
     },
     {
       "name": "data-engineer",
@@ -253,7 +253,7 @@
       "version": "1.0.0",
       "file": "subagents/data-engineer.md",
       "tools": [],
-      "tags": []
+      "path": "data-engineer.md"
     },
     {
       "name": "data-scientist",
@@ -262,7 +262,7 @@
       "version": "1.0.0",
       "file": "subagents/data-scientist.md",
       "tools": [],
-      "tags": []
+      "path": "data-scientist.md"
     },
     {
       "name": "database-admin",
@@ -271,7 +271,7 @@
       "version": "1.0.0",
       "file": "subagents/database-admin.md",
       "tools": [],
-      "tags": []
+      "path": "database-admin.md"
     },
     {
       "name": "database-optimization",
@@ -280,7 +280,7 @@
       "version": "1.0.0",
       "file": "subagents/database-optimization.md",
       "tools": [],
-      "tags": []
+      "path": "database-optimization.md"
     },
     {
       "name": "database-optimizer",
@@ -289,7 +289,7 @@
       "version": "1.0.0",
       "file": "subagents/database-optimizer.md",
       "tools": [],
-      "tags": []
+      "path": "database-optimizer.md"
     },
     {
       "name": "debugger",
@@ -298,7 +298,7 @@
       "version": "1.0.0",
       "file": "subagents/debugger.md",
       "tools": [],
-      "tags": []
+      "path": "debugger.md"
     },
     {
       "name": "defi-strategist",
@@ -307,7 +307,7 @@
       "version": "1.0.0",
       "file": "subagents/defi-strategist.md",
       "tools": [],
-      "tags": []
+      "path": "defi-strategist.md"
     },
     {
       "name": "deployment-engineer",
@@ -316,7 +316,7 @@
       "version": "1.0.0",
       "file": "subagents/deployment-engineer.md",
       "tools": [],
-      "tags": []
+      "path": "deployment-engineer.md"
     },
     {
       "name": "devops-troubleshooter",
@@ -325,7 +325,7 @@
       "version": "1.0.0",
       "file": "subagents/devops-troubleshooter.md",
       "tools": [],
-      "tags": []
+      "path": "devops-troubleshooter.md"
     },
     {
       "name": "directus-developer",
@@ -334,7 +334,7 @@
       "version": "1.0.0",
       "file": "subagents/directus-developer.md",
       "tools": [],
-      "tags": []
+      "path": "directus-developer.md"
     },
     {
       "name": "docusaurus-expert",
@@ -343,7 +343,7 @@
       "version": "1.0.0",
       "file": "subagents/docusaurus-expert.md",
       "tools": [],
-      "tags": []
+      "path": "docusaurus-expert.md"
     },
     {
       "name": "drupal-developer",
@@ -352,7 +352,7 @@
       "version": "1.0.0",
       "file": "subagents/drupal-developer.md",
       "tools": [],
-      "tags": []
+      "path": "drupal-developer.md"
     },
     {
       "name": "dx-optimizer",
@@ -361,7 +361,7 @@
       "version": "1.0.0",
       "file": "subagents/dx-optimizer.md",
       "tools": [],
-      "tags": []
+      "path": "dx-optimizer.md"
     },
     {
       "name": "episode-orchestrator",
@@ -370,7 +370,7 @@
       "version": "1.0.0",
       "file": "subagents/episode-orchestrator.md",
       "tools": [],
-      "tags": []
+      "path": "episode-orchestrator.md"
     },
     {
       "name": "error-detective",
@@ -379,7 +379,7 @@
       "version": "1.0.0",
       "file": "subagents/error-detective.md",
       "tools": [],
-      "tags": []
+      "path": "error-detective.md"
     },
     {
       "name": "frontend-developer",
@@ -388,7 +388,7 @@
       "version": "1.0.0",
       "file": "subagents/frontend-developer.md",
       "tools": [],
-      "tags": []
+      "path": "frontend-developer.md"
     },
     {
       "name": "game-developer",
@@ -397,7 +397,7 @@
       "version": "1.0.0",
       "file": "subagents/game-developer.md",
       "tools": [],
-      "tags": []
+      "path": "game-developer.md"
     },
     {
       "name": "golang-expert",
@@ -406,7 +406,7 @@
       "version": "1.0.0",
       "file": "subagents/golang-expert.md",
       "tools": [],
-      "tags": []
+      "path": "golang-expert.md"
     },
     {
       "name": "graphql-architect",
@@ -415,7 +415,7 @@
       "version": "1.0.0",
       "file": "subagents/graphql-architect.md",
       "tools": [],
-      "tags": []
+      "path": "graphql-architect.md"
     },
     {
       "name": "hackathon-ai-strategist",
@@ -424,7 +424,7 @@
       "version": "1.0.0",
       "file": "subagents/hackathon-ai-strategist.md",
       "tools": [],
-      "tags": []
+      "path": "hackathon-ai-strategist.md"
     },
     {
       "name": "hyperledger-fabric-developer",
@@ -433,7 +433,7 @@
       "version": "1.0.0",
       "file": "subagents/hyperledger-fabric-developer.md",
       "tools": [],
-      "tags": []
+      "path": "hyperledger-fabric-developer.md"
     },
     {
       "name": "incident-responder",
@@ -442,7 +442,7 @@
       "version": "1.0.0",
       "file": "subagents/incident-responder.md",
       "tools": [],
-      "tags": []
+      "path": "incident-responder.md"
     },
     {
       "name": "ios-developer",
@@ -451,7 +451,7 @@
       "version": "1.0.0",
       "file": "subagents/ios-developer.md",
       "tools": [],
-      "tags": []
+      "path": "ios-developer.md"
     },
     {
       "name": "java-developer",
@@ -460,7 +460,7 @@
       "version": "1.0.0",
       "file": "subagents/java-developer.md",
       "tools": [],
-      "tags": []
+      "path": "java-developer.md"
     },
     {
       "name": "javascript-developer",
@@ -469,7 +469,7 @@
       "version": "1.0.0",
       "file": "subagents/javascript-developer.md",
       "tools": [],
-      "tags": []
+      "path": "javascript-developer.md"
     },
     {
       "name": "laravel-vue-developer",
@@ -478,7 +478,7 @@
       "version": "1.0.0",
       "file": "subagents/laravel-vue-developer.md",
       "tools": [],
-      "tags": []
+      "path": "laravel-vue-developer.md"
     },
     {
       "name": "legacy-modernizer",
@@ -487,7 +487,7 @@
       "version": "1.0.0",
       "file": "subagents/legacy-modernizer.md",
       "tools": [],
-      "tags": []
+      "path": "legacy-modernizer.md"
     },
     {
       "name": "legal-advisor",
@@ -496,7 +496,7 @@
       "version": "1.0.0",
       "file": "subagents/legal-advisor.md",
       "tools": [],
-      "tags": []
+      "path": "legal-advisor.md"
     },
     {
       "name": "llms-maintainer",
@@ -505,7 +505,7 @@
       "version": "1.0.0",
       "file": "subagents/llms-maintainer.md",
       "tools": [],
-      "tags": []
+      "path": "llms-maintainer.md"
     },
     {
       "name": "markdown-syntax-formatter",
@@ -514,7 +514,7 @@
       "version": "1.0.0",
       "file": "subagents/markdown-syntax-formatter.md",
       "tools": [],
-      "tags": []
+      "path": "markdown-syntax-formatter.md"
     },
     {
       "name": "market-research-analyst",
@@ -523,7 +523,7 @@
       "version": "1.0.0",
       "file": "subagents/market-research-analyst.md",
       "tools": [],
-      "tags": []
+      "path": "market-research-analyst.md"
     },
     {
       "name": "mcp-deployment-orchestrator",
@@ -532,7 +532,7 @@
       "version": "1.0.0",
       "file": "subagents/mcp-deployment-orchestrator.md",
       "tools": [],
-      "tags": []
+      "path": "mcp-deployment-orchestrator.md"
     },
     {
       "name": "mcp-expert",
@@ -541,7 +541,7 @@
       "version": "1.0.0",
       "file": "subagents/mcp-expert.md",
       "tools": [],
-      "tags": []
+      "path": "mcp-expert.md"
     },
     {
       "name": "mcp-registry-navigator",
@@ -550,7 +550,7 @@
       "version": "1.0.0",
       "file": "subagents/mcp-registry-navigator.md",
       "tools": [],
-      "tags": []
+      "path": "mcp-registry-navigator.md"
     },
     {
       "name": "mcp-security-auditor",
@@ -559,7 +559,7 @@
       "version": "1.0.0",
       "file": "subagents/mcp-security-auditor.md",
       "tools": [],
-      "tags": []
+      "path": "mcp-security-auditor.md"
     },
     {
       "name": "mcp-server-architect",
@@ -568,7 +568,7 @@
       "version": "1.0.0",
       "file": "subagents/mcp-server-architect.md",
       "tools": [],
-      "tags": []
+      "path": "mcp-server-architect.md"
     },
     {
       "name": "mcp-testing-engineer",
@@ -577,7 +577,7 @@
       "version": "1.0.0",
       "file": "subagents/mcp-testing-engineer.md",
       "tools": [],
-      "tags": []
+      "path": "mcp-testing-engineer.md"
     },
     {
       "name": "metadata-agent",
@@ -586,7 +586,7 @@
       "version": "1.0.0",
       "file": "subagents/metadata-agent.md",
       "tools": [],
-      "tags": []
+      "path": "metadata-agent.md"
     },
     {
       "name": "ml-engineer",
@@ -595,7 +595,7 @@
       "version": "1.0.0",
       "file": "subagents/ml-engineer.md",
       "tools": [],
-      "tags": []
+      "path": "ml-engineer.md"
     },
     {
       "name": "mlops-engineer",
@@ -604,7 +604,7 @@
       "version": "1.0.0",
       "file": "subagents/mlops-engineer.md",
       "tools": [],
-      "tags": []
+      "path": "mlops-engineer.md"
     },
     {
       "name": "mobile-developer",
@@ -613,7 +613,7 @@
       "version": "1.0.0",
       "file": "subagents/mobile-developer.md",
       "tools": [],
-      "tags": []
+      "path": "mobile-developer.md"
     },
     {
       "name": "moc-agent",
@@ -622,7 +622,7 @@
       "version": "1.0.0",
       "file": "subagents/moc-agent.md",
       "tools": [],
-      "tags": []
+      "path": "moc-agent.md"
     },
     {
       "name": "network-engineer",
@@ -631,7 +631,7 @@
       "version": "1.0.0",
       "file": "subagents/network-engineer.md",
       "tools": [],
-      "tags": []
+      "path": "network-engineer.md"
     },
     {
       "name": "nextjs-app-router-developer",
@@ -640,7 +640,7 @@
       "version": "1.0.0",
       "file": "subagents/nextjs-app-router-developer.md",
       "tools": [],
-      "tags": []
+      "path": "nextjs-app-router-developer.md"
     },
     {
       "name": "ocr-grammar-fixer",
@@ -649,7 +649,7 @@
       "version": "1.0.0",
       "file": "subagents/ocr-grammar-fixer.md",
       "tools": [],
-      "tags": []
+      "path": "ocr-grammar-fixer.md"
     },
     {
       "name": "ocr-quality-assurance",
@@ -658,7 +658,7 @@
       "version": "1.0.0",
       "file": "subagents/ocr-quality-assurance.md",
       "tools": [],
-      "tags": []
+      "path": "ocr-quality-assurance.md"
     },
     {
       "name": "payment-integration",
@@ -667,7 +667,7 @@
       "version": "1.0.0",
       "file": "subagents/payment-integration.md",
       "tools": [],
-      "tags": []
+      "path": "payment-integration.md"
     },
     {
       "name": "performance-engineer",
@@ -676,7 +676,7 @@
       "version": "1.0.0",
       "file": "subagents/performance-engineer.md",
       "tools": [],
-      "tags": []
+      "path": "performance-engineer.md"
     },
     {
       "name": "php-developer",
@@ -685,7 +685,7 @@
       "version": "1.0.0",
       "file": "subagents/php-developer.md",
       "tools": [],
-      "tags": []
+      "path": "php-developer.md"
     },
     {
       "name": "podcast-content-analyzer",
@@ -694,7 +694,7 @@
       "version": "1.0.0",
       "file": "subagents/podcast-content-analyzer.md",
       "tools": [],
-      "tags": []
+      "path": "podcast-content-analyzer.md"
     },
     {
       "name": "podcast-metadata-specialist",
@@ -703,7 +703,7 @@
       "version": "1.0.0",
       "file": "subagents/podcast-metadata-specialist.md",
       "tools": [],
-      "tags": []
+      "path": "podcast-metadata-specialist.md"
     },
     {
       "name": "podcast-transcriber",
@@ -712,7 +712,7 @@
       "version": "1.0.0",
       "file": "subagents/podcast-transcriber.md",
       "tools": [],
-      "tags": []
+      "path": "podcast-transcriber.md"
     },
     {
       "name": "podcast-trend-scout",
@@ -721,7 +721,7 @@
       "version": "1.0.0",
       "file": "subagents/podcast-trend-scout.md",
       "tools": [],
-      "tags": []
+      "path": "podcast-trend-scout.md"
     },
     {
       "name": "project-supervisor-orchestrator",
@@ -730,7 +730,7 @@
       "version": "1.0.0",
       "file": "subagents/project-supervisor-orchestrator.md",
       "tools": [],
-      "tags": []
+      "path": "project-supervisor-orchestrator.md"
     },
     {
       "name": "prompt-engineer",
@@ -739,7 +739,7 @@
       "version": "1.0.0",
       "file": "subagents/prompt-engineer.md",
       "tools": [],
-      "tags": []
+      "path": "prompt-engineer.md"
     },
     {
       "name": "python-expert",
@@ -748,7 +748,7 @@
       "version": "1.0.0",
       "file": "subagents/python-expert.md",
       "tools": [],
-      "tags": []
+      "path": "python-expert.md"
     },
     {
       "name": "quant-analyst",
@@ -757,7 +757,7 @@
       "version": "1.0.0",
       "file": "subagents/quant-analyst.md",
       "tools": [],
-      "tags": []
+      "path": "quant-analyst.md"
     },
     {
       "name": "query-clarifier",
@@ -766,7 +766,7 @@
       "version": "1.0.0",
       "file": "subagents/query-clarifier.md",
       "tools": [],
-      "tags": []
+      "path": "query-clarifier.md"
     },
     {
       "name": "rails-expert",
@@ -775,7 +775,7 @@
       "version": "1.0.0",
       "file": "subagents/rails-expert.md",
       "tools": [],
-      "tags": []
+      "path": "rails-expert.md"
     },
     {
       "name": "react-performance-optimization",
@@ -784,7 +784,7 @@
       "version": "1.0.0",
       "file": "subagents/react-performance-optimization.md",
       "tools": [],
-      "tags": []
+      "path": "react-performance-optimization.md"
     },
     {
       "name": "report-generator",
@@ -793,7 +793,7 @@
       "version": "1.0.0",
       "file": "subagents/report-generator.md",
       "tools": [],
-      "tags": []
+      "path": "report-generator.md"
     },
     {
       "name": "research-brief-generator",
@@ -802,7 +802,7 @@
       "version": "1.0.0",
       "file": "subagents/research-brief-generator.md",
       "tools": [],
-      "tags": []
+      "path": "research-brief-generator.md"
     },
     {
       "name": "research-coordinator",
@@ -811,7 +811,7 @@
       "version": "1.0.0",
       "file": "subagents/research-coordinator.md",
       "tools": [],
-      "tags": []
+      "path": "research-coordinator.md"
     },
     {
       "name": "research-orchestrator",
@@ -820,7 +820,7 @@
       "version": "1.0.0",
       "file": "subagents/research-orchestrator.md",
       "tools": [],
-      "tags": []
+      "path": "research-orchestrator.md"
     },
     {
       "name": "research-synthesizer",
@@ -829,7 +829,7 @@
       "version": "1.0.0",
       "file": "subagents/research-synthesizer.md",
       "tools": [],
-      "tags": []
+      "path": "research-synthesizer.md"
     },
     {
       "name": "review-agent",
@@ -838,7 +838,7 @@
       "version": "1.0.0",
       "file": "subagents/review-agent.md",
       "tools": [],
-      "tags": []
+      "path": "review-agent.md"
     },
     {
       "name": "risk-manager",
@@ -847,7 +847,7 @@
       "version": "1.0.0",
       "file": "subagents/risk-manager.md",
       "tools": [],
-      "tags": []
+      "path": "risk-manager.md"
     },
     {
       "name": "ruby-expert",
@@ -856,7 +856,7 @@
       "version": "1.0.0",
       "file": "subagents/ruby-expert.md",
       "tools": [],
-      "tags": []
+      "path": "ruby-expert.md"
     },
     {
       "name": "rust-expert",
@@ -865,7 +865,7 @@
       "version": "1.0.0",
       "file": "subagents/rust-expert.md",
       "tools": [],
-      "tags": []
+      "path": "rust-expert.md"
     },
     {
       "name": "sales-automator",
@@ -874,7 +874,7 @@
       "version": "1.0.0",
       "file": "subagents/sales-automator.md",
       "tools": [],
-      "tags": []
+      "path": "sales-automator.md"
     },
     {
       "name": "search-specialist",
@@ -883,7 +883,7 @@
       "version": "1.0.0",
       "file": "subagents/search-specialist.md",
       "tools": [],
-      "tags": []
+      "path": "search-specialist.md"
     },
     {
       "name": "security-auditor",
@@ -892,7 +892,7 @@
       "version": "1.0.0",
       "file": "subagents/security-auditor.md",
       "tools": [],
-      "tags": []
+      "path": "security-auditor.md"
     },
     {
       "name": "seo-podcast-optimizer",
@@ -901,7 +901,7 @@
       "version": "1.0.0",
       "file": "subagents/seo-podcast-optimizer.md",
       "tools": [],
-      "tags": []
+      "path": "seo-podcast-optimizer.md"
     },
     {
       "name": "social-media-clip-creator",
@@ -910,7 +910,7 @@
       "version": "1.0.0",
       "file": "subagents/social-media-clip-creator.md",
       "tools": [],
-      "tags": []
+      "path": "social-media-clip-creator.md"
     },
     {
       "name": "social-media-copywriter",
@@ -919,7 +919,7 @@
       "version": "1.0.0",
       "file": "subagents/social-media-copywriter.md",
       "tools": [],
-      "tags": []
+      "path": "social-media-copywriter.md"
     },
     {
       "name": "sql-expert",
@@ -928,7 +928,7 @@
       "version": "1.0.0",
       "file": "subagents/sql-expert.md",
       "tools": [],
-      "tags": []
+      "path": "sql-expert.md"
     },
     {
       "name": "tag-agent",
@@ -937,7 +937,7 @@
       "version": "1.0.0",
       "file": "subagents/tag-agent.md",
       "tools": [],
-      "tags": []
+      "path": "tag-agent.md"
     },
     {
       "name": "task-decomposition-expert",
@@ -946,7 +946,7 @@
       "version": "1.0.0",
       "file": "subagents/task-decomposition-expert.md",
       "tools": [],
-      "tags": []
+      "path": "task-decomposition-expert.md"
     },
     {
       "name": "technical-researcher",
@@ -955,7 +955,7 @@
       "version": "1.0.0",
       "file": "subagents/technical-researcher.md",
       "tools": [],
-      "tags": []
+      "path": "technical-researcher.md"
     },
     {
       "name": "terraform-specialist",
@@ -964,7 +964,7 @@
       "version": "1.0.0",
       "file": "subagents/terraform-specialist.md",
       "tools": [],
-      "tags": []
+      "path": "terraform-specialist.md"
     },
     {
       "name": "test-automator",
@@ -973,7 +973,7 @@
       "version": "1.0.0",
       "file": "subagents/test-automator.md",
       "tools": [],
-      "tags": []
+      "path": "test-automator.md"
     },
     {
       "name": "text-comparison-validator",
@@ -982,7 +982,7 @@
       "version": "1.0.0",
       "file": "subagents/text-comparison-validator.md",
       "tools": [],
-      "tags": []
+      "path": "text-comparison-validator.md"
     },
     {
       "name": "timestamp-precision-specialist",
@@ -991,7 +991,7 @@
       "version": "1.0.0",
       "file": "subagents/timestamp-precision-specialist.md",
       "tools": [],
-      "tags": []
+      "path": "timestamp-precision-specialist.md"
     },
     {
       "name": "twitter-ai-influencer-manager",
@@ -1000,7 +1000,7 @@
       "version": "1.0.0",
       "file": "subagents/twitter-ai-influencer-manager.md",
       "tools": [],
-      "tags": []
+      "path": "twitter-ai-influencer-manager.md"
     },
     {
       "name": "typescript-expert",
@@ -1009,7 +1009,7 @@
       "version": "1.0.0",
       "file": "subagents/typescript-expert.md",
       "tools": [],
-      "tags": []
+      "path": "typescript-expert.md"
     },
     {
       "name": "ui-ux-designer",
@@ -1018,7 +1018,7 @@
       "version": "1.0.0",
       "file": "subagents/ui-ux-designer.md",
       "tools": [],
-      "tags": []
+      "path": "ui-ux-designer.md"
     },
     {
       "name": "url-context-validator",
@@ -1027,7 +1027,7 @@
       "version": "1.0.0",
       "file": "subagents/url-context-validator.md",
       "tools": [],
-      "tags": []
+      "path": "url-context-validator.md"
     },
     {
       "name": "url-link-extractor",
@@ -1036,7 +1036,7 @@
       "version": "1.0.0",
       "file": "subagents/url-link-extractor.md",
       "tools": [],
-      "tags": []
+      "path": "url-link-extractor.md"
     },
     {
       "name": "visual-analysis-ocr",
@@ -1045,7 +1045,7 @@
       "version": "1.0.0",
       "file": "subagents/visual-analysis-ocr.md",
       "tools": [],
-      "tags": []
+      "path": "visual-analysis-ocr.md"
     },
     {
       "name": "wordpress-developer",
@@ -1054,7 +1054,7 @@
       "version": "1.0.0",
       "file": "subagents/wordpress-developer.md",
       "tools": [],
-      "tags": []
+      "path": "wordpress-developer.md"
     }
   ],
   "commands": [
@@ -1064,8 +1064,9 @@
       "description": "Add a new entry to the project's CHANGELOG.md file following Keep a Changelog format",
       "version": "1.0.0",
       "file": "commands/add-to-changelog.md",
-      "prefix": "/",
-      "tags": []
+      "path": "add-to-changelog.md",
+      "argumentHint": "<version> <change_type> <message>",
+      "model": ""
     },
     {
       "name": "bug-fix",
@@ -1073,8 +1074,9 @@
       "description": "Systematic workflow for fixing bugs including issue creation, branch management, and PR submission",
       "version": "1.0.0",
       "file": "commands/bug-fix.md",
-      "prefix": "/",
-      "tags": []
+      "path": "bug-fix.md",
+      "argumentHint": "<bug_description>",
+      "model": ""
     },
     {
       "name": "check",
@@ -1082,8 +1084,9 @@
       "description": "Run project checks and fix any errors without committing",
       "version": "1.0.0",
       "file": "commands/check.md",
-      "prefix": "/",
-      "tags": []
+      "path": "check.md",
+      "argumentHint": "",
+      "model": ""
     },
     {
       "name": "clean",
@@ -1091,8 +1094,9 @@
       "description": "Fix all linting and formatting issues across the codebase",
       "version": "1.0.0",
       "file": "commands/clean.md",
-      "prefix": "/",
-      "tags": []
+      "path": "clean.md",
+      "argumentHint": "",
+      "model": ""
     },
     {
       "name": "code_analysis",
@@ -1100,8 +1104,9 @@
       "description": "Perform comprehensive code analysis with quality metrics and recommendations",
       "version": "1.0.0",
       "file": "commands/code_analysis.md",
-      "prefix": "/",
-      "tags": []
+      "path": "code_analysis.md",
+      "argumentHint": "[file-or-directory-path]",
+      "model": ""
     },
     {
       "name": "commit",
@@ -1109,8 +1114,9 @@
       "description": "Create well-formatted git commits with conventional commit messages and emoji",
       "version": "1.0.0",
       "file": "commands/commit.md",
-      "prefix": "/",
-      "tags": []
+      "path": "commit.md",
+      "argumentHint": "",
+      "model": ""
     },
     {
       "name": "commit-fast",
@@ -1118,8 +1124,9 @@
       "description": "Automatically create and execute a git commit using the first suggested commit message",
       "version": "1.0.0",
       "file": "commands/commit-fast.md",
-      "prefix": "/",
-      "tags": []
+      "path": "commit-fast.md",
+      "argumentHint": "",
+      "model": ""
     },
     {
       "name": "context-prime",
@@ -1127,8 +1134,9 @@
       "description": "Load project context by reading README.md and exploring relevant project files",
       "version": "1.0.0",
       "file": "commands/context-prime.md",
-      "prefix": "/",
-      "tags": []
+      "path": "context-prime.md",
+      "argumentHint": "",
+      "model": ""
     },
     {
       "name": "create-command",
@@ -1136,8 +1144,9 @@
       "description": "Create a new command following existing patterns and organizational structure",
       "version": "1.0.0",
       "file": "commands/create-command.md",
-      "prefix": "/",
-      "tags": []
+      "path": "create-command.md",
+      "argumentHint": "",
+      "model": ""
     },
     {
       "name": "create-docs",
@@ -1145,8 +1154,9 @@
       "description": "Analyze GitHub issue and create technical specification with implementation plan",
       "version": "1.0.0",
       "file": "commands/create-docs.md",
-      "prefix": "/",
-      "tags": []
+      "path": "create-docs.md",
+      "argumentHint": "<issue_number>",
+      "model": ""
     },
     {
       "name": "create-jtbd",
@@ -1154,8 +1164,9 @@
       "description": "Create a Jobs to be Done (JTBD) document for a product feature focusing on user needs",
       "version": "1.0.0",
       "file": "commands/create-jtbd.md",
-      "prefix": "/",
-      "tags": []
+      "path": "create-jtbd.md",
+      "argumentHint": "<feature description> [output-path]",
+      "model": ""
     },
     {
       "name": "create-pr",
@@ -1163,8 +1174,9 @@
       "description": "Create a new branch, commit changes, and submit a pull request with automatic commit splitting",
       "version": "1.0.0",
       "file": "commands/create-pr.md",
-      "prefix": "/",
-      "tags": []
+      "path": "create-pr.md",
+      "argumentHint": "",
+      "model": ""
     },
     {
       "name": "create-prd",
@@ -1172,8 +1184,9 @@
       "description": "Create a Product Requirements Document (PRD) for a product feature",
       "version": "1.0.0",
       "file": "commands/create-prd.md",
-      "prefix": "/",
-      "tags": []
+      "path": "create-prd.md",
+      "argumentHint": "<feature description> [output-path]",
+      "model": ""
     },
     {
       "name": "create-prp",
@@ -1181,8 +1194,9 @@
       "description": "Create a comprehensive Product Requirement Prompt (PRP) with research and context gathering",
       "version": "1.0.0",
       "file": "commands/create-prp.md",
-      "prefix": "/",
-      "tags": []
+      "path": "create-prp.md",
+      "argumentHint": "<feature_description>",
+      "model": ""
     },
     {
       "name": "create-pull-request",
@@ -1190,8 +1204,9 @@
       "description": "Guide for creating pull requests using GitHub CLI with proper templates and conventions",
       "version": "1.0.0",
       "file": "commands/create-pull-request.md",
-      "prefix": "/",
-      "tags": []
+      "path": "create-pull-request.md",
+      "argumentHint": "",
+      "model": ""
     },
     {
       "name": "create-worktrees",
@@ -1199,8 +1214,9 @@
       "description": "Manage git worktrees for open PRs and create new branch worktrees",
       "version": "1.0.0",
       "file": "commands/create-worktrees.md",
-      "prefix": "/",
-      "tags": []
+      "path": "create-worktrees.md",
+      "argumentHint": "",
+      "model": ""
     },
     {
       "name": "docs",
@@ -1208,8 +1224,9 @@
       "description": "Update or generate YAML documentation for SQL models with proper descriptions and tests",
       "version": "1.0.0",
       "file": "commands/docs.md",
-      "prefix": "/",
-      "tags": []
+      "path": "docs.md",
+      "argumentHint": "<model_name_or_path>",
+      "model": ""
     },
     {
       "name": "explain-issue-fix",
@@ -1217,8 +1234,9 @@
       "description": "Explain how tasks in an issue were implemented with detailed breakdown",
       "version": "1.0.0",
       "file": "commands/explain-issue-fix.md",
-      "prefix": "/",
-      "tags": []
+      "path": "explain-issue-fix.md",
+      "argumentHint": "",
+      "model": ""
     },
     {
       "name": "five",
@@ -1226,8 +1244,9 @@
       "description": "Apply the Five Whys root cause analysis technique to systematically investigate issues",
       "version": "1.0.0",
       "file": "commands/five.md",
-      "prefix": "/",
-      "tags": []
+      "path": "five.md",
+      "argumentHint": "<issue_description>",
+      "model": ""
     },
     {
       "name": "fix-github-issue",
@@ -1235,8 +1254,9 @@
       "description": "Analyze and fix a GitHub issue with comprehensive testing and verification",
       "version": "1.0.0",
       "file": "commands/fix-github-issue.md",
-      "prefix": "/",
-      "tags": []
+      "path": "fix-github-issue.md",
+      "argumentHint": "<issue_number>",
+      "model": ""
     },
     {
       "name": "fix-issue",
@@ -1244,8 +1264,9 @@
       "description": "Fix a specific issue or problem with the given identifier or description",
       "version": "1.0.0",
       "file": "commands/fix-issue.md",
-      "prefix": "/",
-      "tags": []
+      "path": "fix-issue.md",
+      "argumentHint": "<issue_identifier>",
+      "model": ""
     },
     {
       "name": "fix-pr",
@@ -1253,8 +1274,9 @@
       "description": "Fetch unresolved comments for current branch's PR and fix them",
       "version": "1.0.0",
       "file": "commands/fix-pr.md",
-      "prefix": "/",
-      "tags": []
+      "path": "fix-pr.md",
+      "argumentHint": "",
+      "model": ""
     },
     {
       "name": "husky",
@@ -1262,8 +1284,9 @@
       "description": "Verify repository is in working state by running CI checks and fixing issues",
       "version": "1.0.0",
       "file": "commands/husky.md",
-      "prefix": "/",
-      "tags": []
+      "path": "husky.md",
+      "argumentHint": "",
+      "model": ""
     },
     {
       "name": "initref",
@@ -1271,8 +1294,9 @@
       "description": "Build reference documentation by creating markdown files and updating CLAUDE.md",
       "version": "1.0.0",
       "file": "commands/initref.md",
-      "prefix": "/",
-      "tags": []
+      "path": "initref.md",
+      "argumentHint": "",
+      "model": ""
     },
     {
       "name": "mermaid",
@@ -1280,8 +1304,9 @@
       "description": "Create entity relationship diagrams using Mermaid from SQL/database files",
       "version": "1.0.0",
       "file": "commands/mermaid.md",
-      "prefix": "/",
-      "tags": []
+      "path": "mermaid.md",
+      "argumentHint": "<source-path> [output-path]",
+      "model": ""
     },
     {
       "name": "optimize",
@@ -1289,8 +1314,9 @@
       "description": "Analyze code performance and propose three specific optimization improvements",
       "version": "1.0.0",
       "file": "commands/optimize.md",
-      "prefix": "/",
-      "tags": []
+      "path": "optimize.md",
+      "argumentHint": "",
+      "model": ""
     },
     {
       "name": "pr-review",
@@ -1298,8 +1324,9 @@
       "description": "Conduct comprehensive PR review from multiple perspectives (PM, Developer, QA, Security)",
       "version": "1.0.0",
       "file": "commands/pr-review.md",
-      "prefix": "/",
-      "tags": []
+      "path": "pr-review.md",
+      "argumentHint": "<pr_link_or_number>",
+      "model": ""
     },
     {
       "name": "prime",
@@ -1307,8 +1334,9 @@
       "description": "Load project context by reading key documentation files and exploring project structure",
       "version": "1.0.0",
       "file": "commands/prime.md",
-      "prefix": "/",
-      "tags": []
+      "path": "prime.md",
+      "argumentHint": "",
+      "model": ""
     },
     {
       "name": "release",
@@ -1316,8 +1344,9 @@
       "description": "Prepare a new release by updating changelog, version, and documentation",
       "version": "1.0.0",
       "file": "commands/release.md",
-      "prefix": "/",
-      "tags": []
+      "path": "release.md",
+      "argumentHint": "",
+      "model": ""
     },
     {
       "name": "repro-issue",
@@ -1325,8 +1354,9 @@
       "description": "Reproduce a specific issue by creating a failing test case",
       "version": "1.0.0",
       "file": "commands/repro-issue.md",
-      "prefix": "/",
-      "tags": []
+      "path": "repro-issue.md",
+      "argumentHint": "<issue_description>",
+      "model": ""
     },
     {
       "name": "rsi",
@@ -1334,8 +1364,9 @@
       "description": "Read project commands and documentation to optimize AI-assisted development process",
       "version": "1.0.0",
       "file": "commands/rsi.md",
-      "prefix": "/",
-      "tags": []
+      "path": "rsi.md",
+      "argumentHint": "",
+      "model": ""
     },
     {
       "name": "run-ci",
@@ -1343,8 +1374,9 @@
       "description": "Run CI checks and fix any errors until all tests pass",
       "version": "1.0.0",
       "file": "commands/run-ci.md",
-      "prefix": "/",
-      "tags": []
+      "path": "run-ci.md",
+      "argumentHint": "",
+      "model": ""
     },
     {
       "name": "tdd",
@@ -1352,8 +1384,9 @@
       "description": "Test-driven development workflow with Red-Green-Refactor process and branch management",
       "version": "1.0.0",
       "file": "commands/tdd.md",
-      "prefix": "/",
-      "tags": []
+      "path": "tdd.md",
+      "argumentHint": "",
+      "model": ""
     },
     {
       "name": "todo",
@@ -1361,8 +1394,9 @@
       "description": "Manage project todos in a todos.md file with add, complete, remove, and list operations",
       "version": "1.0.0",
       "file": "commands/todo.md",
-      "prefix": "/",
-      "tags": []
+      "path": "todo.md",
+      "argumentHint": "<action> [args...]",
+      "model": ""
     },
     {
       "name": "update-branch-name",
@@ -1370,8 +1404,9 @@
       "description": "Update current git branch name based on analysis of changes made",
       "version": "1.0.0",
       "file": "commands/update-branch-name.md",
-      "prefix": "/",
-      "tags": []
+      "path": "update-branch-name.md",
+      "argumentHint": "",
+      "model": ""
     },
     {
       "name": "update-docs",
@@ -1379,8 +1414,9 @@
       "description": "Update implementation documentation including specs, status, and best practices",
       "version": "1.0.0",
       "file": "commands/update-docs.md",
-      "prefix": "/",
-      "tags": []
+      "path": "update-docs.md",
+      "argumentHint": "",
+      "model": ""
     },
     {
       "name": "use-stepper",
@@ -1388,8 +1424,9 @@
       "description": "Use structured stepper approach for problem-solving and project development",
       "version": "1.0.0",
       "file": "commands/use-stepper.md",
-      "prefix": "/",
-      "tags": []
+      "path": "use-stepper.md",
+      "argumentHint": "",
+      "model": ""
     }
   ]
 }
