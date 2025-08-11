@@ -7,6 +7,7 @@ on:
       - 'subagents/**'
       - 'commands/**'
       - 'scripts/generate-registry.js'
+      - 'scripts/fetch-docker-mcp.js'
   workflow_dispatch:
 
 jobs:
@@ -24,15 +25,30 @@ jobs:
         with:
           node-version: '20'
           
+      - name: Setup Docker (optional for Docker MCP)
+        uses: docker/setup-buildx-action@v3
+        continue-on-error: true
+          
       - name: Install gray-matter
         run: npm install gray-matter
         
       - name: Generate registry.json
+        env:
+          CI: 'true'
         run: node scripts/generate-registry.js
         
-      - name: Commit and push if changed
+      - name: Validate registry generation
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add web-ui/public/registry.json
-          git diff --staged --quiet || (git commit -m "Update registry.json [skip ci]" && git push)
+          echo "Registry generation completed successfully"
+          echo "Note: registry.json is generated at build time and not committed to git"
+          
+      - name: Trigger Vercel Deployment
+        if: success()
+        run: |
+          if [ -n "${{ secrets.VERCEL_DEPLOY_HOOK }}" ]; then
+            echo "Triggering Vercel deployment with updated registry..."
+            curl -X POST ${{ secrets.VERCEL_DEPLOY_HOOK }}
+            echo "Deployment triggered successfully"
+          else
+            echo "VERCEL_DEPLOY_HOOK secret not configured, skipping deployment trigger"
+          fi

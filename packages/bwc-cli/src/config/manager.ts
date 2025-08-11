@@ -22,7 +22,8 @@ const DEFAULT_CONFIG: BwcConfig = {
   },
   installed: {
     subagents: [],
-    commands: []
+    commands: [],
+    mcpServers: []
   }
 }
 
@@ -35,14 +36,24 @@ const DEFAULT_PROJECT_CONFIG: BwcConfig = {
   },
   installed: {
     subagents: [],
-    commands: []
+    commands: [],
+    mcpServers: []
   }
 }
 
 export class ConfigManager {
+  private static instance: ConfigManager | null = null
   private config: BwcConfig | null = null
   private configPath: string | null = null
   private isProjectLevel: boolean = false
+  private forceUser: boolean = false
+
+  static getInstance(): ConfigManager {
+    if (!ConfigManager.instance) {
+      ConfigManager.instance = new ConfigManager()
+    }
+    return ConfigManager.instance
+  }
 
   private async findProjectConfig(): Promise<string | null> {
     const projectConfigNames = ['bwc.config.json', '.bwc/config.json']
@@ -94,16 +105,19 @@ export class ConfigManager {
       return this.config
     }
 
-    // First, check for project-level config
-    const projectConfigPath = await this.findProjectConfig()
-    if (projectConfigPath) {
-      this.config = await readJSON<BwcConfig>(projectConfigPath)
-      this.configPath = projectConfigPath
-      this.isProjectLevel = true
-      return this.config
+    // If forceUser is true, skip project config check
+    if (!this.forceUser) {
+      // First, check for project-level config
+      const projectConfigPath = await this.findProjectConfig()
+      if (projectConfigPath) {
+        this.config = await readJSON<BwcConfig>(projectConfigPath)
+        this.configPath = projectConfigPath
+        this.isProjectLevel = true
+        return this.config
+      }
     }
 
-    // Fall back to global config
+    // Fall back to user config (or load it directly if forceUser)
     if (!await fileExists(CONFIG_PATH)) {
       throw new Error('Configuration not found. Run "bwc init" first.')
     }
@@ -207,11 +221,73 @@ export class ConfigManager {
     return this.configPath || CONFIG_PATH
   }
 
-  async getAllDependencies(): Promise<{ subagents: string[], commands: string[] }> {
+  async addInstalledMCPServer(name: string): Promise<void> {
+    const config = await this.load()
+    if (!config.installed.mcpServers) {
+      config.installed.mcpServers = []
+    }
+    if (!config.installed.mcpServers.includes(name)) {
+      config.installed.mcpServers.push(name)
+      await this.save()
+    }
+  }
+
+  async removeInstalledMCPServer(name: string): Promise<void> {
+    const config = await this.load()
+    if (config.installed.mcpServers) {
+      config.installed.mcpServers = config.installed.mcpServers.filter(s => s !== name)
+      await this.save()
+    }
+  }
+
+  async getInstalledMCPServers(): Promise<string[]> {
+    const config = await this.load()
+    return config.installed.mcpServers || []
+  }
+
+  async getAllDependencies(): Promise<{ subagents: string[], commands: string[], mcpServers: string[] }> {
     const config = await this.load()
     return {
       subagents: config.installed.subagents || [],
-      commands: config.installed.commands || []
+      commands: config.installed.commands || [],
+      mcpServers: config.installed.mcpServers || []
     }
+  }
+
+  async getConfig(): Promise<BwcConfig> {
+    if (!this.config) {
+      await this.load()
+    }
+    return this.config!
+  }
+
+  async saveConfig(config: BwcConfig): Promise<void> {
+    this.config = config
+    return this.save()
+  }
+
+  /**
+   * Force loading user configuration even if project config exists
+   */
+  async loadUserConfig(): Promise<BwcConfig> {
+    // Reset the config to force reload
+    this.config = null
+    this.forceUser = true
+    
+    try {
+      const config = await this.load()
+      return config
+    } finally {
+      // Reset forceUser flag after loading
+      this.forceUser = false
+    }
+  }
+
+  /**
+   * Reset to default behavior (prefer project config)
+   */
+  resetToDefault(): void {
+    this.config = null
+    this.forceUser = false
   }
 }

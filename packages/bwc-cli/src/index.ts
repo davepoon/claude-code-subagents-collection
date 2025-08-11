@@ -9,7 +9,10 @@ import { createInitCommand } from './commands/init.js'
 import { createAddCommand } from './commands/add.js'
 import { createListCommand } from './commands/list.js'
 import { createSearchCommand } from './commands/search.js'
+import { createRemoveCommand } from './commands/remove.js'
+import { createInfoCommand } from './commands/info.js'
 import { createInstallCommand } from './commands/install.js'
+import { createContributeCommand } from './commands/contribute.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
@@ -28,7 +31,10 @@ program.addCommand(createInitCommand())
 program.addCommand(createAddCommand())
 program.addCommand(createListCommand())
 program.addCommand(createSearchCommand())
+program.addCommand(createRemoveCommand())
+program.addCommand(createInfoCommand())
 program.addCommand(createInstallCommand())
+program.addCommand(createContributeCommand())
 
 // Parse command line arguments
 program.parse()

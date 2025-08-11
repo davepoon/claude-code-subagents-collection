@@ -23,13 +23,16 @@ Browse, search, and install both subagents and commands instantly at [buildwithc
 Install and manage subagents and commands directly from your terminal with our new CLI tool:
 
 ```bash
-# Install the CLI globally
+# Install the CLI for current user
 npm install -g bwc-cli
 
-# Initialize configuration
+# Initialize user configuration (default)
 bwc init
 
-# Add subagents or commands
+# Or initialize project configuration (team sharing)
+bwc init --project
+
+# Add subagents or commands (goes to project if project config exists)
 bwc add --agent python-pro
 bwc add --command dockerize
 
@@ -46,11 +49,51 @@ bwc search python
 
 Learn more about the CLI tool at [buildwithclaude.com/docs/cli](https://www.buildwithclaude.com/docs/cli)
 
+### 🔌 MCP Server Support (New!) - Docker Secure
+
+Connect Claude to 100+ external tools through **secure Docker containers**:
+
+![MCP Servers](buildwithclaude-mcps.png)
+
+```bash
+# Prerequisites: Docker Desktop required
+# https://docker.com/products/docker-desktop
+
+# Browse MCP servers
+bwc mcp list
+
+# Install for current user (all projects)
+bwc add --mcp postgres --scope user
+
+# Install for project only (team sharing)
+bwc add --mcp postgres --scope project
+
+# List servers by scope
+bwc mcp list              # All servers
+bwc mcp list --user       # User-installed
+bwc mcp list --project    # Project-installed
+```
+
+#### Installation Scopes
+- **User Scope**: Personal servers across all projects (stored in `~/.bwc/config.json`)
+- **Project Scope**: Team-shared servers in version control (stored in `./bwc.config.json`)
+
+**Note**: When `bwc init --project` is used, all subagents and commands default to project installation
+
+#### Why Docker-Only for MCP?
+- 🔒 **Maximum Security** - Complete container isolation
+- 🔑 **Protected Secrets** - Docker manages API keys
+- ✅ **Verified Servers** - All images signed by Docker
+- 🌐 **Single Gateway** - One secure endpoint
+
+Learn more: [buildwithclaude.com/mcp-servers](https://www.buildwithclaude.com/mcp-servers)
+
 ## Overview
 
 This repository contains:
 - **43+ Specialized Subagents**: AI experts in specific domains, automatically invoked based on context or explicitly called when needed
 - **39+ Slash Commands**: Community-contributed commands for automating tasks, managing projects, and enhancing workflows
+- **100+ MCP Servers**: Secure connections to databases, APIs, and external tools via Docker containers
 
 ## Quick Start
 

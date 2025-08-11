@@ -1,4 +1,4 @@
-name: Validate Subagents and Commands
+name: Validate Subagents, Commands, and MCP Servers
 
 on:
   push:

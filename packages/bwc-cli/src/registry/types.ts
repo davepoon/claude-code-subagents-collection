@@ -1,4 +1,6 @@
 import { z } from 'zod'
+import { MCPServerSchema } from './mcp-types'
+export * from './mcp-types'
 
 export const SubagentSchema = z.object({
   name: z.string(),
@@ -31,7 +33,8 @@ export const RegistrySchema = z.object({
   version: z.string(),
   lastUpdated: z.string(),
   subagents: z.array(SubagentSchema),
-  commands: z.array(CommandSchema)
+  commands: z.array(CommandSchema),
+  mcpServers: z.array(MCPServerSchema).optional()
 })
 
 export type Subagent = z.infer<typeof SubagentSchema>
@@ -45,9 +48,11 @@ export interface BwcConfig {
   paths: {
     subagents: string
     commands: string
+    mcpServers?: string
   }
   installed: {
     subagents: string[]
     commands: string[]
+    mcpServers?: string[]
   }
 }

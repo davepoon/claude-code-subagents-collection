@@ -4,3 +4,12 @@ mise.toml
 yarn.lock
 .DS_Store
 .claude
+bwc.config.json
+
+# Environment files
+.env
+.env.local
+.env.*.local
+scripts/mcp-importers/.env
+.mcp.json
+docs

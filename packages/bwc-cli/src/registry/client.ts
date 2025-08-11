@@ -1,12 +1,20 @@
 import got from 'got'
-import { Registry, RegistrySchema, Subagent, Command } from './types.js'
+import { Registry, RegistrySchema, Subagent, Command, MCPServer } from './types.js'
 import { ConfigManager } from '../config/manager.js'
 
 export class RegistryClient {
+  private static instance: RegistryClient | null = null
   private configManager: ConfigManager
 
   constructor(configManager: ConfigManager) {
     this.configManager = configManager
+  }
+
+  static getInstance(): RegistryClient {
+    if (!RegistryClient.instance) {
+      RegistryClient.instance = new RegistryClient(ConfigManager.getInstance())
+    }
+    return RegistryClient.instance
   }
 
   async fetchRegistry(): Promise<Registry> {
@@ -77,5 +85,38 @@ export class RegistryClient {
       }
       throw error
     }
+  }
+
+  // MCP Server methods
+  async getMCPServers(): Promise<MCPServer[]> {
+    const registry = await this.fetchRegistry()
+    return registry.mcpServers || []
+  }
+
+  async getMCPServer(name: string): Promise<MCPServer | undefined> {
+    const servers = await this.getMCPServers()
+    return servers.find(s => s.name === name)
+  }
+
+  async listMCPServers(): Promise<MCPServer[]> {
+    return this.getMCPServers()
+  }
+
+  async searchMCPServers(query: string): Promise<MCPServer[]> {
+    const servers = await this.getMCPServers()
+    const lowerQuery = query.toLowerCase()
+    
+    return servers.filter(s => 
+      s.name.toLowerCase().includes(lowerQuery) ||
+      s.display_name.toLowerCase().includes(lowerQuery) ||
+      s.description.toLowerCase().includes(lowerQuery) ||
+      s.tags.some(tag => tag.toLowerCase().includes(lowerQuery)) ||
+      s.category.toLowerCase().includes(lowerQuery)
+    )
+  }
+
+  async findMCPServer(name: string): Promise<MCPServer | undefined> {
+    const servers = await this.getMCPServers()
+    return servers.find(s => s.name === name)
   }
 }
