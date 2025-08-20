@@ -571,6 +571,39 @@ View all servers at [buildwithclaude.com/mcp-servers](https://buildwithclaude.co
 - `version-control-git` - Git and version control commands
 - `miscellaneous` - Other specialized commands
 
+## Proxy Configuration
+
+BWC CLI automatically detects and uses HTTP/HTTPS proxy settings from environment variables, making it compatible with corporate networks.
+
+### Environment Variables
+
+```bash
+# Set proxy for HTTPS traffic
+export HTTPS_PROXY=https://proxy.company.com:8080
+
+# Set proxy for HTTP traffic  
+export HTTP_PROXY=http://proxy.company.com:8080
+
+# For corporate proxies with SSL certificate issues
+export NODE_TLS_REJECT_UNAUTHORIZED=0
+```
+
+### Usage Examples
+
+```bash
+# Set proxy environment variables and run commands
+export HTTPS_PROXY=https://proxy.company.com:8080
+bwc list
+
+# Or set for single command
+HTTPS_PROXY=https://proxy.company.com:8080 bwc add --agent python-pro
+
+# Corporate proxy with SSL certificate handling
+NODE_TLS_REJECT_UNAUTHORIZED=0 HTTPS_PROXY=https://proxy.company.com:8080 bwc list
+```
+
+**Note**: The `NODE_TLS_REJECT_UNAUTHORIZED=0` setting disables SSL certificate verification, which is commonly needed for corporate proxies that intercept HTTPS traffic with their own certificates.
+
 ## Troubleshooting
 
 ### Configuration not found
@@ -578,6 +611,14 @@ Run `bwc init` to create configuration.
 
 ### Failed to fetch registry
 Check your internet connection. The CLI needs access to `buildwithclaude.com`.
+
+If behind a corporate proxy, see the [Proxy Configuration](#proxy-configuration) section above.
+
+### "Unable to get local issuer certificate" error
+This occurs when using corporate proxies that intercept SSL traffic. Set the environment variable:
+```bash
+export NODE_TLS_REJECT_UNAUTHORIZED=0
+```
 
 ### Permission denied
 On macOS/Linux, you may need to use `sudo npm install -g bwc-cli`.

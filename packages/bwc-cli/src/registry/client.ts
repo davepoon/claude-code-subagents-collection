@@ -1,4 +1,5 @@
 import got from 'got'
+import { HttpsProxyAgent, HttpProxyAgent } from 'hpagent'
 import { Registry, RegistrySchema, Subagent, Command, MCPServer } from './types.js'
 import { ConfigManager } from '../config/manager.js'
 
@@ -8,6 +9,48 @@ export class RegistryClient {
 
   constructor(configManager: ConfigManager) {
     this.configManager = configManager
+  }
+
+  private getGotInstance(): typeof got {
+    const httpsProxy = process.env.HTTPS_PROXY
+    const httpProxy = process.env.HTTP_PROXY
+    
+    if (httpsProxy || httpProxy) {
+      const agents: { https?: HttpsProxyAgent; http?: HttpProxyAgent } = {}
+      
+      // Check if SSL verification should be disabled (for corporate proxies)
+      const rejectUnauthorized = process.env.NODE_TLS_REJECT_UNAUTHORIZED !== '0'
+      
+      if (httpsProxy) {
+        agents.https = new HttpsProxyAgent({
+          keepAlive: true,
+          keepAliveMsecs: 1000,
+          maxSockets: 256,
+          maxFreeSockets: 256,
+          scheduling: 'lifo',
+          proxy: httpsProxy,
+          rejectUnauthorized
+        })
+      }
+      
+      if (httpProxy) {
+        agents.http = new HttpProxyAgent({
+          keepAlive: true,
+          keepAliveMsecs: 1000,
+          maxSockets: 256,
+          maxFreeSockets: 256,
+          scheduling: 'lifo',
+          proxy: httpProxy
+        })
+      }
+      
+      return got.extend({ 
+        agent: agents,
+        https: { rejectUnauthorized }
+      })
+    }
+    
+    return got
   }
 
   static getInstance(): RegistryClient {
@@ -21,7 +64,7 @@ export class RegistryClient {
     const registryUrl = await this.configManager.getRegistryUrl()
     
     try {
-      const response = await got(registryUrl).json()
+      const response = await this.getGotInstance()(registryUrl).json()
       return RegistrySchema.parse(response)
     } catch (error) {
       if (error instanceof Error) {
@@ -78,7 +121,7 @@ export class RegistryClient {
     const fullUrl = baseUrl + fileUrl
     
     try {
-      return await got(fullUrl).text()
+      return await this.getGotInstance()(fullUrl).text()
     } catch (error) {
       if (error instanceof Error) {
         throw new Error(`Failed to fetch file content: ${error.message}`)
