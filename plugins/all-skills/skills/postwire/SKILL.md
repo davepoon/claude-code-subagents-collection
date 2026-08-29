@@ -74,8 +74,25 @@ curl -X POST https://postwire.io/api/generate \
   }'
 ```
 
-Returns `{ "drafts": { "linkedin": {...}, "x": {...}, "bluesky": {...} } }`. Pass that object
-straight through as `per_platform` below.
+Returns `{ "drafts": { "linkedin": {...}, "x": {...}, "bluesky": {...} } }`. That object is what
+`per_platform` takes below — but show it to the user first, for the reason in the next section.
+
+## Confirm Before Publishing
+
+`/api/post` and `/api/schedule` are **visible writes**: they put text under the user's own name, in
+public, where other people see it. Treat them the way you would treat sending an email as them.
+
+Before either call, show the user:
+
+- the **exact text** that will go out, per network — not the prompt that generated it
+- **which networks** it is going to
+- **when** it publishes (now, or the exact `run_at`)
+
+and wait for a yes.
+
+This matters most right after `/api/generate`. Those drafts are model output: passing them straight
+into `per_platform` without showing them means the user finds out what they said by reading their own
+timeline. Generate, show, confirm, then post.
 
 ### Publish now
 
