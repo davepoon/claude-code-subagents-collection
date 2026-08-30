@@ -1,0 +1,23 @@
+{
+  "name": "funasr-mcp",
+  "displayName": "FunASR MCP",
+  "version": "0.1.2",
+  "description": "Transcribe local audio through the official FunASR MCP server with private, on-device SenseVoice inference.",
+  "author": {
+    "name": "ModelScope",
+    "url": "https://github.com/modelscope"
+  },
+  "homepage": "https://github.com/modelscope/FunASR/tree/main/examples/mcp_server",
+  "repository": "https://github.com/modelscope/FunASR",
+  "license": "MIT",
+  "keywords": [
+    "audio",
+    "asr",
+    "funasr",
+    "mcp",
+    "sensevoice",
+    "speech-to-text",
+    "transcription"
+  ],
+  "mcpServers": "./.mcp.json"
+}
