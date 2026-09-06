@@ -30,44 +30,53 @@ Voice chat for agents: transcribe voice (incl. WeChat silk) → reply with perso
 
 ## 快速验证 / Smoke Test（30 秒，免 key）
 
+从本技能目录运行（本仓库已自带脚本，无需额外 clone）：
+
 ```bash
-python3 skills/voice-persona/scripts/voice_persona.py demo
+cd plugins/all-skills/skills/voice-persona   # 或直接进入 voice-persona 技能目录
+python3 scripts/voice_persona.py demo
 # 🎙 语音 → 文字 → [元气少女/沉稳大叔/新闻播报] 三音色回复音频
 # ✅ 全链路通过：语音输入 → 转写 → 人格回复 → 语音输出
 ```
 
-## 安装
+## 使用前提（依赖）
 
 ```bash
-# Hermes
-hermes skills install jiawood2006/hermes-skills/skills/voice-persona
-# 任意环境
-git clone https://github.com/jiawood2006/hermes-skills && cd hermes-skills/skills/voice-persona
-pip install faster-whisper pilk edge-tts
+pip install faster-whisper pilk edge-tts    # 首次使用安装
+# 可选：--llm 增强口吻需要 LLM_API_KEY / OpenAI 兼容 URL（与本集合其他技能一致）
 ```
 
 ## 用法
 
+所有命令从技能目录内以相对路径调用脚本（无需安装到系统 PATH）：
+
 ```bash
 # 1. 语音 → 文字（微信语音直接传 .silk 文件即可）
-python3 voice_persona.py stt wechat_voice.silk
-python3 voice_persona.py stt meeting.m4a --model small
+python3 scripts/voice_persona.py stt wechat_voice.silk
+python3 scripts/voice_persona.py stt meeting.m4a --model small
 
 # 2. 文字 → 人格回复 → 语音 mp3
-python3 voice_persona.py speak "明天记得交报告" --persona yunjian --out reply.mp3
+python3 scripts/voice_persona.py speak "明天记得交报告" --persona yunjian --out reply.mp3
 
 # 3. 只取人格化文本（接你自己的 TTS/IM）
-python3 voice_persona.py chat "明天记得交报告" --persona xiaoyi
+python3 scripts/voice_persona.py chat "明天记得交报告" --persona xiaoyi
 
 # 4. 列出人格
-python3 voice_persona.py list
+python3 scripts/voice_persona.py list
 
 # 5. 音频 → 微信 silk 语音（可回发微信语音气泡）
-python3 voice_persona.py to_silk reply.mp3 --out reply.silk
+python3 scripts/voice_persona.py to_silk reply.mp3 --out reply.silk
 
 # 6. 一条命令双向闭环：人格语音 → 微信格式
-python3 voice_persona.py speak "明天早上十点开会" --persona xiaoyi --out r.mp3
-python3 voice_persona.py to_silk r.mp3          # → r.silk（#!SILK_V3）
+python3 scripts/voice_persona.py speak "明天早上十点开会" --persona xiaoyi --out r.mp3
+python3 scripts/voice_persona.py to_silk r.mp3          # → r.silk（#!SILK_V3）
+```
+
+### 在 Hermes 中安装（可选）
+
+本仓库自带脚本可直接运行；若使用 Hermes Agent，也可从技能源仓库安装以自动接入：
+```bash
+hermes skills install jiawood2006/hermes-skills/skills/voice-persona
 ```
 
 ## 人格库（可扩展）
@@ -86,9 +95,9 @@ python3 voice_persona.py to_silk r.mp3          # → r.silk（#!SILK_V3）
 ## Agent 接入（Hermes 等框架）
 
 **STT 接入**：把平台收到的语音消息文件交给 `stt` 子命令 → 拿到文字进对话流。
-Hermes 的 `stt.provider: local_command` + `HERMES_LOCAL_STT_COMMAND` 环境变量可直接把微信语音自动接入：
+Hermes 的 `stt.provider: local_command` + `HERMES_LOCAL_STT_COMMAND` 环境变量可直接把微信语音自动接入（指向本技能 scripts/ 下的脚本绝对路径）：
 ```
-HERMES_LOCAL_STT_COMMAND=<python> <...>/voice_persona.py stt {input_path} --model {model} --output_dir {output_dir} --language {language}
+HERMES_LOCAL_STT_COMMAND=<python> <...>/skills/voice-persona/scripts/voice_persona.py stt {input_path} --model {model} --output_dir {output_dir} --language {language}
 ```
 
 **TTS 接入**：人格化文本 → `speak` 出 mp3 → 平台发送语音。
