@@ -43,8 +43,12 @@ Get a key at [you.com/platform/api-keys](https://you.com/platform/api-keys) and 
 
 ## Tools
 
-- `you-search` — web search with fresh results and source URLs (available on both endpoints)
-- URL/content extraction and cited research tools (available with an API key)
+Both endpoints expose:
+
+- `you-search` — web search returning ranked results with URLs and snippets
+- `you-contents` — fetch full page content as markdown or HTML (read results with this before answering; snippets are not page content)
+
+The authenticated endpoint adds multi-step research and finance tools.
 
 ## When to Use
 
