@@ -1820,7 +1820,7 @@
     {
       "name": "claude-prospector",
       "description": "Claude Code efficiency and hygiene toolkit. Surfaces token spend across the 5h / 7d / Sonnet-7d billing windows with per-model / per-agent / per-skill attribution, and audits your effective Claude Code configuration (custom + plugin agents and skills) for overlap and conflicts. Ships an interactive dashboard, a conversational usage-analysis skill, and a structured config-audit skill.",
-      "version": "0.10.0",
+      "version": "0.14.0",
       "author": {
         "name": "Christopher Beaulieu",
         "url": "https://github.com/glitchwerks"
